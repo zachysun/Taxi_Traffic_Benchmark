@@ -1,0 +1,30 @@
+dataset:
+  adj_data_path: '../data/adjacency_matrix_grid.csv'
+  feature_matrix_data_path: '../data/feature_matrix_grid.npy'
+  input_seq: 12
+  output_seq: 1
+  num_of_vertices: 225
+  batch_size: 8
+  device: cuda:0
+  split_rate: [7, 2, 1]
+
+optimize:
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  name: Adam
+
+trainer:
+  Kt: 3
+  Ks: 3         # [2, 3]
+  theta: 0.5
+  epoch: 300
+  n_his: 12
+  n_pred: 1
+  channel: 2
+  act_func: glu         # [glu, gtu]
+  graph_conv_type: cheb_graph_conv          # [cheb_graph_conv, graph_conv]
+  stblock_num: 2
+  enable_bias: True
+  dropout: 0.5
+  model_path: '../saved_models'
+  results_path: '../results'

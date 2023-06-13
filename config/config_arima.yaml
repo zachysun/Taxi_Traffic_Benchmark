@@ -1,0 +1,9 @@
+dataset:
+  adj_data_path: '../data/adjacency_matrix_grid.csv'
+  feature_matrix_data_path: '../data/feature_matrix_grid.npy'
+  input_seq: 12
+  output_seq: 1
+  num_of_vertices: 225
+  batch_size: 8
+  split_rate: [7, 2, 1]
+  device: None

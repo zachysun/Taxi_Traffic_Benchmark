@@ -1,0 +1,30 @@
+dataset:
+  adj_data_path: '../data/adjacency_matrix_grid.csv'
+  feature_matrix_data_path: '../data/feature_matrix_grid.npy'
+  input_seq: 12
+  output_seq: 1
+  num_of_vertices: 225
+  batch_size: 8
+  device: cuda:0
+  split_rate: [7, 2, 1]
+
+optimize:
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  name: Adam
+
+trainer:
+  K: 3
+  theta: 0.5
+  epoch: 300
+  ctx: 0
+  in_channels: 2
+  nb_block: 2
+  nb_chev_filter: 64
+  nb_time_filter: 64
+  start_epoch: 0
+  num_of_hours: 1
+  num_of_days: 0
+  num_of_weeks: 0
+  model_path: '../saved_models'
+  results_path: '../results'

@@ -1,0 +1,29 @@
+dataset:
+  adj_data_path: '../data/adjacency_matrix_grid.csv'
+  feature_matrix_data_path: '../data/feature_matrix_grid.npy'
+  input_seq: 12
+  output_seq: 1
+  num_of_vertices: 225
+  batch_size: 8
+  device: cuda:0
+  split_rate: [7, 2, 1]
+
+optimize:
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  name: Adam
+
+trainer:
+  K: 3
+  theta: 0.5
+  epoch: 300
+  dropout: 0.5
+  gcn_bool: True
+  aptonly: False
+  addaptadj: True
+  randomadj: True
+  nhid: 32
+  in_dim: 2
+  out_dim: 1
+  model_path: '../saved_models'
+  results_path: '../results'
