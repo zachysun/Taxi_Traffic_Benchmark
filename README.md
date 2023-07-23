@@ -1,12 +1,12 @@
-### Taxi Traffic Benchmark
+## Taxi Traffic Benchmark
 
-#### Dataset
+### Dataset
 
 - Shanghai Taxi
 
 
 
-#### Baseline
+### Baseline
 
 - ARIMA
 - SVR
@@ -17,7 +17,7 @@
 
 
 
-#### Proposed
+### Proposed
 
 MA2GCN(Multi Adjacency relationship Attention Graph Convolutional Networks)
 
