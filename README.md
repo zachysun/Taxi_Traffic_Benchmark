@@ -21,7 +21,7 @@
 
 MA2GCN(Multi Adjacency relationship Attention Graph Convolutional Networks)
 
-| <img decoding="async" src="./imgs/arch.png" width="350" height=""> | <img decoding="async" src="./imgs/adj_attention.png" width="350" height=""> |
+| <img decoding="async" src="./imgs/arch.png" width="400" height=""> | <img decoding="async" src="./imgs/adj_attention.png" width="400" height=""> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                         Architecture                         |       Multi Adjacency relationship Attention mechanism       |
 
