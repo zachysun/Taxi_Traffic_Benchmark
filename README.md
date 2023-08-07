@@ -19,7 +19,7 @@
 
 ### Proposed
 
-MA2GCN(Multi Adjacency relationship Attention Graph Convolutional Networks)
+**MA2GCN: Multi Adjacency relationship Attention Graph Convolutional Networks for Traffic Prediction**
 
 | <img decoding="async" src="./imgs/arch.png" width="400" height=""> | <img decoding="async" src="./imgs/adj_attention.png" width="400" height=""> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
