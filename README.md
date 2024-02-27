@@ -13,13 +13,13 @@
 - ARIMA
 - SVR
 - LSTM
-- STGCN[[Paper]](https://arxiv.org/abs/1709.04875)[[Code](https://github.com/hazdzz/STGCN)]
-- ASTGCN[[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/3881)[[Code](https://github.com/guoshnBJTU/ASTGCN-r-pytorch)]
-- Graph WaveNet[[Paper]](https://arxiv.org/pdf/1906.00121)[[Code](https://github.com/nnzhan/Graph-WaveNet)]
+- STGCN[[Paper]](https://arxiv.org/abs/1709.04875) [[Code]](./models/stgcn) [[Official Code]](https://github.com/hazdzz/STGCN)
+- ASTGCN[[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/3881) [[Code]](./models/ASTGCN_r.py) [[Official Code]](https://github.com/guoshnBJTU/ASTGCN-r-pytorch)
+- Graph WaveNet[[Paper]](https://arxiv.org/pdf/1906.00121) [[Code]](./models/graph_wavenet.py) [[Official Code]](https://github.com/nnzhan/Graph-WaveNet)
 
 ### Proposed
 
-[[Paper]()]**MA2GCN: Multi Adjacency relationship Attention Graph Convolutional
+[[Paper]](https://arxiv.org/abs/2401.08727)**MA2GCN: Multi Adjacency relationship Attention Graph Convolutional
 Networks for Traffic Prediction using Trajectory data**
 
 | <img decoding="async" src="./imgs/arch.png" width="400" height=""> | <img decoding="async" src="./imgs/adj_attention.png" width="400" height=""> |
@@ -30,3 +30,9 @@ Networks for Traffic Prediction using Trajectory data**
 
 - GPS2Graph [Link](https://github.com/zachysun/Gps2graph)
 
+### Important Notes
+
+- The Shanghai Taxi Dataset rarely appears in traffic prediction tasks, so the six baselines above can be used as a reference.
+- The six baselines can't use the io matrix as it's specificly used for proposed model(MA2GCN).
+- Due to the io matrix is time sensitive, the dataset needs to be divided in chronological order and cannot be shuffled. For the six baselines, there is no such limit. 
+- The proposed model is on arxiv.org. Now it can be seen as a simple technical report exploring the use of taxi trajectories for traffic prediction tasks. There's still significant potential for enhancement. 
