@@ -33,6 +33,6 @@ Networks for Traffic Prediction using Trajectory data**
 ### Important Notes
 
 - The Shanghai Taxi Dataset rarely appears in traffic prediction tasks, so the six baselines above can be used as a reference.
-- The six baselines can't use the io matrix as it's specificly used for proposed model(MA2GCN).
-- Due to the io matrix is time sensitive, the dataset needs to be divided in chronological order and cannot be shuffled. For the six baselines, there is no such limit. 
+- The six baselines can't use the io/mobility matrix as it's specificly used for proposed model(MA2GCN).
+- Due to the io/mobility matrix is time sensitive, the dataset needs to be divided in chronological order and cannot be shuffled. For the six baselines, there is no such limit. 
 - The proposed model is on arxiv.org. Now it can be seen as a simple technical report exploring the use of taxi trajectories for traffic prediction tasks. There's still significant potential for enhancement. 
